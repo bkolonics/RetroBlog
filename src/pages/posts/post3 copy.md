@@ -1,7 +1,7 @@
 ---
 title: New post
 date: 2019-11-10
-draft: true
+draft: false
 ---
 
 # Bonjour à tous !
