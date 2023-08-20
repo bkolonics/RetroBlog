@@ -9,9 +9,43 @@ const { title, body, date } = Astro.props;
 ---
 
 <div class="flex justify-center h-full">
-	<div id="card" class="flex-col border px-10 py-5 w-1/2 h-1/5 rounded-full border-[#262730] shadow-lg  hover:bg-[#E8E3C2] hover:scale-105 transform-gpu transition duration-y">
+	<div id="card" class="fold flex-col border rounded px-10 py-5 w-1/2 h-1/5 border-[#262730] shadow-lg  hover:bg-[#E8E3C2] ">
 		<div class="text-2xl">{title}</div>
 		<div>{date}</div>
 		<div class="text-xl line-clamp-3">{body}</div>
 	</div>
 </div>
+
+<style>
+	.fold{
+  
+  position: relative;
+  text-decoration: none;
+  transition: all ease .5s;
+}
+
+/*
+  paper fold corner
+*/
+
+.fold:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-style: solid;
+  border-width: 0 100px 100px 0; /* play with this value for different shapes make it 0  */
+  border-color: #E8E3C2 #262730;
+  transition: all ease .5s;
+  border-radius: 0.25rem;
+}
+
+/*
+  on li hover make paper fold larger
+*/
+.fold:hover:before {
+  border-width: 0 150px 150px 0;
+  border-color: #FAF4D3 #262730;
+  border-radius: 0.25rem;
+}
+</style>
