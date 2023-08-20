@@ -5,7 +5,9 @@ import Card from "../components/Card.astro";
 interface Post {
   frontmatter: {
     title: string;
+    description: string;
     date: string; // Format: YYYY-MM-DD
+    edited?: string; // Format: YYYY-MM-DD
     draft?: boolean;
   };
 }
@@ -26,7 +28,8 @@ posts.sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.d
       {posts.map((post) => (
     <Card title={post.frontmatter.title}
           date={new Date(post.frontmatter.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
-          body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus dui ut nunc lacinia, quis fringilla arcu laoreet. Aliquam vitae urna non leo egestas eleifend. Nullam blandit, massa sit amet dictum rutrum, nulla orci pretium quam, facilisis consequat urna risus et lacus. Curabitur eu odio sed augue facilisis pellentesque vitae non turpis. Aliquam pretium non orci quis pellentesque. Aenean sit amet blandit orci, sed laoreet augue. Proin in mi eu felis blandit blandit. Curabitur rutrum sapien vel malesuada consectetur. " >
+          edited={post.frontmatter.edited ? new Date(post.frontmatter.edited).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : undefined}
+          body={post.frontmatter.description}>
     </Card>
   ))}
     </div>

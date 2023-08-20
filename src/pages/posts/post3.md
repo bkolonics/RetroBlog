@@ -1,5 +1,6 @@
 ---
 title: Post 3
+description: This is a new post.
 date: 2019-11-07
 draft: false
 ---
