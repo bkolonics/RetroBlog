@@ -1,6 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
 ---
 <Layout title="Home">
-  <h1>Index	</h1>
+  <div class="flex justify-center place-content-center h-screen">
+  <div class="flex flex-col justify-center w-full h-full">
+    <h1 class="flex justify-center pb-4">Explore the world of technology through my personal tech-oriented blog.</h1>
+    <Card title="title" 
+          body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus dui ut nunc lacinia, quis fringilla arcu laoreet. Aliquam vitae urna non leo egestas eleifend. Nullam blandit, massa sit amet dictum rutrum, nulla orci pretium quam, facilisis consequat urna risus et lacus. Curabitur eu odio sed augue facilisis pellentesque vitae non turpis. Aliquam pretium non orci quis pellentesque. Aenean sit amet blandit orci, sed laoreet augue. Proin in mi eu felis blandit blandit. Curabitur rutrum sapien vel malesuada consectetur. " 
+          date="date">
+    </Card>
+    </div>
+  </div>
 </Layout>
