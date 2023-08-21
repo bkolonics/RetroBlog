@@ -27,13 +27,13 @@ posts.sort((a, b) => Date.parse(b.data.date) - Date.parse(a.data.date));
   <div class="flex flex-col justify-center w-full h-full">
     <h1 class="flex justify-center pb-4">Explore the world of technology through my personal tech-oriented blog.</h1>
       {posts.map((post) => (
-        <a href={`/posts/` + post.slug}>
-    <Card title={post.data.title}
-          date={new Date(post.data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
-          edited={post.data.edited ? new Date(post.data.edited).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : undefined}
-          body={post.data.description}>
-    </Card>
-    </a>
+          <Card title={post.data.title}
+                date={new Date(post.data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                edited={post.data.edited ? new Date(post.data.edited).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) : undefined}
+                body={post.data.description}
+                url={'/posts/' + post.slug}
+                >
+          </Card>
   ))}
     </div>
   </div>

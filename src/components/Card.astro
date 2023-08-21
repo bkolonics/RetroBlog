@@ -4,18 +4,22 @@ interface Props {
 	body: string;
 	date: string;
   edited?: string;
+  url : string;
 }
 
-const { title, body, date , edited} = Astro.props;
+const { title, body, date , edited, url} = Astro.props;
 ---
 
 <div class="flex justify-center h-full py-3">
-	<div id="card" class="fold flex-col border rounded px-10 py-5 w-1/2 h-1/5 border-[#262730] shadow-lg  hover:bg-[#E8E3C2] ">
-		<div class="text-2xl">{title}</div>
-		<div class="text-[#63657E]">{date}</div>
-    {edited && <div class="font-bold text-[#63657E]">Edited: {edited}</div>}
-		<div class="text-xl line-clamp-3">{body}</div>
-	</div>
+  <a
+    href={url}
+    <div id="card" class="fold flex-col border rounded px-10 py-5 w-1/2 h-1/5 border-[#262730] shadow-lg  hover:bg-[#E8E3C2]">
+        <div class="text-2xl">{title}</div>
+        <div class="text-[#63657E]">{date}</div>
+        {edited && <div class="font-bold text-[#63657E]">Edited: {edited}</div>}
+        <div class="text-xl line-clamp-3">{body}</div>
+    </div>
+  </a>
 </div>
 
 <style>

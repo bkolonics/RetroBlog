@@ -5,9 +5,8 @@ const { frontmatter} = Astro.props;
 
 type Props = CollectionEntry<'blog'>['data']
 
-const { title } = Astro.props;
 ---
-<Layout title="Makrdown page">
+<Layout title={frontmatter.title}>
     <h1>Markdown page</h1>
     <p>Markdown page content</p>
     <p>Page title: {frontmatter.title}</p>
