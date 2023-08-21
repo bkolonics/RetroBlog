@@ -7,7 +7,7 @@ const postsCollection = defineCollection({
         date: z.date(),
         edited: z.date().optional(),
         description : z.string(),
-        draft : z.boolean(),
+        draft : z.boolean().optional().default(true),
     })
 });
 
