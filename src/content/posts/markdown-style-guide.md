@@ -1,15 +1,15 @@
 ---
 title: 'Markdown Style Guide'
-description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
+description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro. Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
 date: 2021-06-01
+edited: 2021-06-01
 draft: false
 ---
 
-Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
 
 ## Headings
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
+The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest. Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
 
 # H1
 
