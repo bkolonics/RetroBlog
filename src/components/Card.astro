@@ -13,16 +13,18 @@ const { title, body, date , edited, url} = Astro.props;
 <div class="flex justify-center h-full py-3">
   <a
     href={url}
-    <div id="card" class="fold flex-col border rounded px-10 py-5 w-1/2 h-1/5 border-[#262730] shadow-lg  hover:bg-[#E8E3C2]">
-        <div class="text-2xl">{title}</div>
-        <div class="text-[#63657E]">{date}</div>
-        {edited && <div class="font-bold text-[#63657E]">Edited: {edited}</div>}
-        <div class="text-xl line-clamp-3">{body}</div>
+    <div id="card" class="fold flex-col border rounded md:px-10 px-5 md:py-5 py-2 md:w-1/2 w-11/12 md:h-1/5 h-2/6 border-[#262730] shadow-lg  hover:bg-[#E8E3C2]">
+        <div class="md:text-2xl text-lg">{title}</div>
+        <div class="text-[#63657E] md:text-base text-sm">{date}</div>
+        {edited && <div class="font-bold text-[#63657E] md:text-base text-sm">Edited: {edited}</div>}
+        <div class="md:text-xl text-sm md:line-clamp-3 line-clamp-5 text-justify">{body}</div>
     </div>
   </a>
 </div>
 
 <style>
+  @media (min-width: 	768px)
+  {
 	.fold{
   
   position: relative;
@@ -54,4 +56,5 @@ const { title, body, date , edited, url} = Astro.props;
   border-color: #FAF4D3 #262730;
   border-radius: 0.25rem;
 }
+  }
 </style>
