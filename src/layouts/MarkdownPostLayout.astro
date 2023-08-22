@@ -8,11 +8,11 @@ type Props = CollectionEntry<'blog'>['data']
 ---
 <Layout title={frontmatter.title}>
 <div class="flex justify-center">
-    <h1 class="text-5xl pt-10 always-underline font-bold">{frontmatter.title}</h1>
+    <h1 class="text-5xl pt-10 always-underline font-bold sm:w-1/2 w-11/12 text-center">{frontmatter.title}</h1>
 </div>
 <div class="flex flex-col justify-center">
-    <div class="flex flex-col self-center w-1/2">
-        <div class="flex flex-row justify-between pt-10 pb-5">
+    <div class="flex flex-col self-center lg:w-1/2 md:w-4/5 w-11/12">
+        <div class="flex lg:flex-row flex-col justify-between pt-10 pb-5">
         <p class="text-2xl">{frontmatter.date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
         <p class="text-2xl">{frontmatter.edited ? `Edited : ${new Date(frontmatter.edited).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}` : undefined}</p>
         </div>
