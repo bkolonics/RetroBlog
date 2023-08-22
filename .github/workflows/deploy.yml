@@ -37,3 +37,11 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
+      - name: Send Pushover notification
+        if: always()
+        uses: pushover-actions/pushover@v1
+        with:
+            user_key: ${{ secrets.PUSHOVER_USER_KEY }}
+            api_token: ${{ secrets.PUSHOVER_API_TOKEN }}
+            title: "Deployment Status"
+            message: "Deployment to GitHub Pages was ${{ job.status }}"
