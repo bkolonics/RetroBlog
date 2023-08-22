@@ -9,5 +9,6 @@ export default defineConfig({
     shikiConfig: {
       theme: 'monokai'
     }
-  }
+  },
+  site: 'https://blog.bence.kolonics.fr'
 });
