@@ -1,3 +1,10 @@
+---
+title: Readme
+description: This is a new post.
+date: 2019-11-07
+draft: false
+---
+
 # Astro Starter Kit: Basics
 
 ```

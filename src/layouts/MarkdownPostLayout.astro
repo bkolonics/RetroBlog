@@ -8,7 +8,7 @@ type Props = CollectionEntry<'blog'>['data']
 ---
 <Layout title={frontmatter.title}>
 <div class="flex justify-center">
-    <h1 class="text-5xl pt-10">{frontmatter.title}</h1>
+    <h1 class="text-5xl pt-10 always-underline font-bold">{frontmatter.title}</h1>
 </div>
 <div class="flex flex-col justify-center">
     <div class="flex flex-col self-center w-1/2">
@@ -23,5 +23,16 @@ type Props = CollectionEntry<'blog'>['data']
     </div>
     
 </div>
+
+<style>
+    .always-underline {
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#262730, #262730);
+    background-size: 100% 3px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size .5s ease-in-out;
+    }
+</style>
 
 </Layout>
