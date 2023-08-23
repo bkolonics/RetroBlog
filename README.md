@@ -1,6 +1,6 @@
 # My blog !
 
-[![Deploy to GitHub Pages](https://github.com/bkolonics/blog/actions/workflows/deploy.yml/badge.svg)](https://github.com/bkolonics/blog/actions/workflows/deploy.yml)
+[![Deploy to GitHub Pages](https://github.com/bkolonics/blog/actions/workflows/deploy.yml/badge.svg)](https://github.com/bkolonics/blog/actions/workflows/deploy.yml)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Welcome to this repository.
 
@@ -28,5 +28,3 @@ The posts need to have a frontmatter (it's the fields between `---` in the markd
 | `draft` | If the post should be published or not | No | `false` |
 
 ## Deployment
-
-## License
