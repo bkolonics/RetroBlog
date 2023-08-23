@@ -1,4 +1,4 @@
-
+#!/bin/bash
 
 var="src/content/posts/"
 stringreplace="draft: true"

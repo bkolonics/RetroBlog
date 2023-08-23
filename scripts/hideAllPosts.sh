@@ -1,5 +1,4 @@
-
-# find . -type f -name 'xa*' -exec sed -i 's/asd/dsg/g' {} \;
+#!/bin/bash
 
 var="src/content/posts/"
 stringreplace="draft: false"
