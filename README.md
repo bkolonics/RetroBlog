@@ -1,4 +1,7 @@
 # My blog !
+
+[![Deploy to GitHub Pages](https://github.com/bkolonics/blog/actions/workflows/deploy.yml/badge.svg)](https://github.com/bkolonics/blog/actions/workflows/deploy.yml)
+
 Welcome to this repository.
 
 This is the repository of my own blog. This repository is used to store the production code of my blog. The blog is built with [Astro](https://astro.build/), a static site generator.
