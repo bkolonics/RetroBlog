@@ -1,4 +1,4 @@
-# My blog !
+# Welcome to my retro/typewriter styled blog !
 
 [![Deploy to GitHub Pages](https://github.com/bkolonics/blog/actions/workflows/deploy.yml/badge.svg)](https://github.com/bkolonics/blog/actions/workflows/deploy.yml)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
