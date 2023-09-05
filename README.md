@@ -8,6 +8,8 @@ This is the repository of my own blog. This repository is used to store the prod
 
 Feel free to fork this repository and use it as a template for your own blog. If you have any questions, feel free to contact me.
 
+Currently I'm not using this template to publish content due to lack of time. But you cant still get a preview at https://blog.bence.kolonics.fr.
+
 ## Installation
 1. Clone this repository
 2. Install the dependencies with `npm install` or `yarn install`
