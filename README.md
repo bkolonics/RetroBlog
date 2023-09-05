@@ -10,6 +10,9 @@ Feel free to fork this repository and use it as a template for your own blog. If
 
 Currently I'm not using this template to publish content due to lack of time. But you cant still get a preview at https://blog.bence.kolonics.fr.
 
+
+![Preview Screenshot](https://raw.githubusercontent.com/bkolonics/blog/main/preview.png)
+
 ## Installation
 1. Clone this repository
 2. Install the dependencies with `npm install` or `yarn install`
