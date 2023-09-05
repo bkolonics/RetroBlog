@@ -34,7 +34,7 @@ The posts need to have a frontmatter (it's the fields between `---` in the markd
 
 ## Deployment
 
-### One click deployment !
+### One click deployment
 
 Get started in one click using the button below.
 
