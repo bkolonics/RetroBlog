@@ -34,6 +34,14 @@ The posts need to have a frontmatter (it's the fields between `---` in the markd
 
 ## Deployment
 
+### One click deployment !
+
+Get started in one click using the button below.
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/bkolonics/RetroBlog)
+
+### Github pages deployment
+
 The blog is automatically deployed to GitHub Pages with GitHub Actions. The deployment is triggered when a new commit is pushed to the `main` branch. The deployment is done with GitHub Actions. The deployment is done with the `deploy.yml` workflow. The workflow is located in the `.github/workflows` directory.
 During the deployment, there is a step that sends a notification via [Pushover](https://pushover.net/). If you want to use this feature, you need to create a Pushover account and create a Pushover application. You need to set the following secrets in the repository settings:
 
